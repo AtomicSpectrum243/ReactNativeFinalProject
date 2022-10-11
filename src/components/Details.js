@@ -88,7 +88,7 @@ const Details = ({route, navigation}) => {
                 color: COLOURS.black,
                 opacity: 0.5,
               }}>
-              ประเภท
+              ประเภทในการทำ
             </Text>
             <Text
               style={{
