@@ -204,7 +204,7 @@ export const COLOURS = {
         },
         {
           name: 'บัวลอยไข่หวาน',
-          title: 'หอมหวาน อร่อย',
+          title: 'หอมหวานกะทิ อร่อย',
           rating: '4.5',
           isTopOfTheWeek: false,
           image: require('../database/images/ขนม/บัวลอยไข่หวาน.jpg'),
