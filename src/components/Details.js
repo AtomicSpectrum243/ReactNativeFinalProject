@@ -6,6 +6,7 @@ import AntDesign from 'react-native-vector-icons/AntDesign';
 import Entypo from 'react-native-vector-icons/Entypo';
 import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
 import Ionicons from 'react-native-vector-icons/Ionicons';
+import MaterialIcons from 'react-native-vector-icons/MaterialIcons';
 import { LogBox } from 'react-native';
 
 //Fix Error Screen Navigation
@@ -173,6 +174,7 @@ const Details = ({route, navigation}) => {
             maxWidth: 310
         }}>
           ส่วนผสม
+          <MaterialCommunityIcons name="food-variant" style={{fontSize: 18, color: COLOURS.black}} />
       </Text>
       <Text
         style={{
@@ -195,6 +197,7 @@ const Details = ({route, navigation}) => {
             maxWidth: 310
         }}>
           วิธีการทำ
+          <MaterialIcons name="food-bank" style={{fontSize: 18, color: COLOURS.black}} />
       </Text>
       <Text
         style={{
@@ -207,7 +210,6 @@ const Details = ({route, navigation}) => {
         }}>
         {FoodList}
       </Text>
-
       <View
         style={{
           width: '100%',

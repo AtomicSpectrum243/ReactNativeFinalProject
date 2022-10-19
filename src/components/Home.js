@@ -296,7 +296,7 @@ const Home = ({navigation}) => {
               style={{fontSize: 20, color: COLOURS.black, opacity: 0.8}}
             />
             <TextInput
-              placeholder="Search..."
+              placeholder="ค้นหา..."
               style={{
                 color: COLOURS.black,
                 fontSize: 16,
