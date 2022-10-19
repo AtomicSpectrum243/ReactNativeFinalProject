@@ -1,5 +1,5 @@
-import React from 'react';
-import {View, Text, TouchableOpacity, Image, ScrollView} from 'react-native';
+import React, { useState, useCallback, useRef } from "react";
+import {View, Text, TouchableOpacity, Image, ScrollView, Button, Alert} from 'react-native';
 import {COLOURS} from '../database/items';
 import FontAwesome from 'react-native-vector-icons/FontAwesome5';
 import AntDesign from 'react-native-vector-icons/AntDesign';
@@ -79,7 +79,7 @@ const Details = ({route, navigation}) => {
           color: COLOURS.black,
           fontWeight: '800',
           paddingHorizontal: 20,
-          maxWidth: 310,
+          maxWidth: 400,
         }}>
         {name}
       </Text>
@@ -202,11 +202,12 @@ const Details = ({route, navigation}) => {
           color: COLOURS.black,
           fontWeight: '800',
           paddingHorizontal: 20,
-          maxWidth: 310,
+          maxWidth: 400,
           margin: 15
         }}>
         {FoodList}
       </Text>
+
       <View
         style={{
           width: '100%',
@@ -214,11 +215,6 @@ const Details = ({route, navigation}) => {
           margin: 0,
           justifyContent: 'center',
           alignItems: 'center',
-              // margin: 0,
-              // bottom: 0,
-              // width: '100%',
-              // justifyContent: 'center',
-              // alignItems: 'center',
         }}>
         <TouchableOpacity
           onPress={() => navigation.goBack()}
