@@ -206,7 +206,7 @@ const Details = ({route, navigation}) => {
           fontWeight: '800',
           paddingHorizontal: 20,
           maxWidth: 400,
-          margin: 15
+          margin: 16
         }}>
         {FoodList}
       </Text>
@@ -241,7 +241,7 @@ const Details = ({route, navigation}) => {
             กลับสู่หน้าหลัก
           </Text>
           <Entypo
-            name="chevron-right"
+            name="home"
             style={{fontSize: 16, color: COLOURS.black}}
           />
         </TouchableOpacity>

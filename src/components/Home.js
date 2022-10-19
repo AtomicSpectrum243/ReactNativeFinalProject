@@ -303,7 +303,7 @@ const Home = ({navigation}) => {
                 paddingVertical: 5,
                 borderBottomWidth: 1,
                 borderBottomColor: COLOURS.black + 20,
-                width: '90%',
+                width: '55%',
                 marginLeft: 10,
                 letterSpacing: 1,
               }}
