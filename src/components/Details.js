@@ -1,5 +1,5 @@
 import React from 'react';
-import {View, Text, TouchableOpacity, Image} from 'react-native';
+import {View, Text, TouchableOpacity, Image, ScrollView} from 'react-native';
 import {COLOURS} from '../database/items';
 import FontAwesome from 'react-native-vector-icons/FontAwesome5';
 import AntDesign from 'react-native-vector-icons/AntDesign';
@@ -20,10 +20,13 @@ const Details = ({route, navigation}) => {
     Type,
     Skill,
     Time,
+    material,
+    FoodList,
     isTopOfTheWeek,
   } = route.params;
 
   return (
+    <ScrollView showsVerticalScrollIndicator={false}>
     <View
       style={{
         width: '100%',
@@ -160,13 +163,62 @@ const Details = ({route, navigation}) => {
           />
         </View>
       </View>
+      <Text
+          style={{
+            fontSize: 19,
+            color: COLOURS.black,
+            opacity: 0.5,
+            fontWeight: '800',
+            paddingHorizontal: 20,
+            maxWidth: 310
+        }}>
+          ส่วนผสม
+      </Text>
+      <Text
+        style={{
+          fontSize: 18,
+          color: COLOURS.black,
+          fontWeight: '800',
+          paddingHorizontal: 20,
+          maxWidth: 310,
+          margin: 15
+        }}>
+        {material}
+      </Text>
+      <Text
+          style={{
+            fontSize: 19,
+            color: COLOURS.black,
+            opacity: 0.5,
+            fontWeight: '800',
+            paddingHorizontal: 20,
+            maxWidth: 310
+        }}>
+          วิธีการทำ
+      </Text>
+      <Text
+        style={{
+          fontSize: 18,
+          color: COLOURS.black,
+          fontWeight: '800',
+          paddingHorizontal: 20,
+          maxWidth: 310,
+          margin: 15
+        }}>
+        {FoodList}
+      </Text>
       <View
         style={{
-          position: 'absolute',
           width: '100%',
           bottom: 0,
+          margin: 0,
           justifyContent: 'center',
           alignItems: 'center',
+              // margin: 0,
+              // bottom: 0,
+              // width: '100%',
+              // justifyContent: 'center',
+              // alignItems: 'center',
         }}>
         <TouchableOpacity
           onPress={() => navigation.goBack()}
@@ -197,6 +249,7 @@ const Details = ({route, navigation}) => {
         </TouchableOpacity>
       </View>
     </View>
+    </ScrollView>
   );
 };
 

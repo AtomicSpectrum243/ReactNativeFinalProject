@@ -95,6 +95,8 @@ const Home = ({navigation}) => {
             Type: data.Type,
             Skill: data.Skill,
             Time: data.Time,
+            material: data.material,
+            FoodList: data.FoodList,
             isTopOfTheWeek: data.isTopOfTheWeek,
             navigation: navigation,
           })

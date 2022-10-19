@@ -2,8 +2,8 @@ export const COLOURS = {
     white: '#ffffff',
     black: '#000000',
     lightGray: '#B3B4B6',
-    accent: '#FFC231',
-    accentRed: '#FB5D2E',
+    accent: '#ac8d4e',
+    accentRed: '#b83d0f',
     accentPink: '#F96165',
   };
   
@@ -21,6 +21,8 @@ export const COLOURS = {
           Type: 'ผัด',
           Skill: 'ง่าย',
           Time: 15,
+          material: '- หมูสับ 200 กรัม \n- พริกกับกระเทียมสับ 2 ช้อนโต๊ะ \n- กระชายหั่น \n- ใบกะเพรา \n- ซีอิ๊วขาว 1 ช้อนโต๊ะ \n- น้ำมันหอย 1 ช้อนโต๊ะ \n- น้ำตาลทราย 1 ช้อนชา \n- ซีอิ๊วดำเล็กน้อย',
+          FoodList: 'Test \nTest \nTest'
         },
         {
           name: 'ผัดไทยใส่ไข่',
