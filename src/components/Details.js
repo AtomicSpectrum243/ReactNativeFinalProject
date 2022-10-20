@@ -23,6 +23,7 @@ const Details = ({route, navigation}) => {
     Time,
     material,
     FoodList,
+    ingredients,
     isTopOfTheWeek,
   } = route.params;
 
@@ -173,8 +174,41 @@ const Details = ({route, navigation}) => {
             paddingHorizontal: 20,
             maxWidth: 310
         }}>
-          ส่วนผสม
+          วัตถุดิบ
           <MaterialCommunityIcons name="food-variant" style={{fontSize: 18, color: COLOURS.black}} />
+      </Text>
+      <ScrollView horizontal={true} showsHorizontalScrollIndicator={false}>
+        {ingredients.map((data, index) => {
+          return (
+            <View
+              key={index}
+              style={{
+                margin: 10,
+                width: 100,
+                height: 100,
+                borderRadius: 15,
+                backgroundColor: COLOURS.white,
+                elevation: 5,
+              }}>
+              <Image
+                source={data}
+                style={{width: '100%', height: '100%', resizeMode: 'contain'}}
+              />
+            </View>
+          );
+        })}
+      </ScrollView>
+      <Text
+          style={{
+            fontSize: 19,
+            color: COLOURS.black,
+            opacity: 0.5,
+            fontWeight: '800',
+            paddingHorizontal: 20,
+            maxWidth: 310
+        }}>
+          ส่วนผสม
+          <MaterialCommunityIcons name="food-turkey" style={{fontSize: 18, color: COLOURS.black}} />
       </Text>
       <Text
         style={{
@@ -182,7 +216,7 @@ const Details = ({route, navigation}) => {
           color: COLOURS.black,
           fontWeight: '800',
           paddingHorizontal: 20,
-          maxWidth: 310,
+          maxWidth: 350,
           margin: 15
         }}>
         {material}

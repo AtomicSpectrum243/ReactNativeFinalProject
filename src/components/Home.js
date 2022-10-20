@@ -96,6 +96,7 @@ const Home = ({navigation}) => {
             Skill: data.Skill,
             Time: data.Time,
             material: data.material,
+            ingredients: data.ingredients,
             FoodList: data.FoodList,
             isTopOfTheWeek: data.isTopOfTheWeek,
             navigation: navigation,
