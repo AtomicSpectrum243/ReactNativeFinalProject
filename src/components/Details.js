@@ -9,11 +9,11 @@ import Ionicons from 'react-native-vector-icons/Ionicons';
 import MaterialIcons from 'react-native-vector-icons/MaterialIcons';
 import { LogBox } from 'react-native';
 
-//Fix Error Screen Navigation
+// Fix Error Screen Navigation
 LogBox.ignoreLogs([
   'Non-serializable values were found in the navigation state',
 ]);
-
+// Navigation Route Data (Pass params to a route)
 const Details = ({route, navigation}) => {
   const {
     name,
@@ -26,7 +26,7 @@ const Details = ({route, navigation}) => {
     ingredients,
     isTopOfTheWeek,
   } = route.params;
-
+// Details Screen
   return (
     <ScrollView showsVerticalScrollIndicator={false}>
     <View

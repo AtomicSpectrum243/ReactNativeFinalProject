@@ -1,3 +1,4 @@
+// Color Code Name
 export const COLOURS = {
     white: '#ffffff',
     black: '#000000',
@@ -6,14 +7,14 @@ export const COLOURS = {
     accentRed: '#b83d0f',
     accentPink: '#F96165',
   };
-  
+  // DataBase for Food Details 
   export const Categories = [
     {
       name: 'จานด่วน',
       image: require('../database/images/จานด่วน/กะเพรา.jpg'),
       items: [
         {
-          name: 'ข้าวกะเพราหมูสับไข่ดาว',
+          name: 'ข้าวกะเพราหมูสับ',
           title: 'อาหารจานเดียวทำง่ายๆ',
           rating: '5.0',
           isTopOfTheWeek: true,

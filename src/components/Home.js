@@ -16,6 +16,7 @@ import FontAwesome from 'react-native-vector-icons/FontAwesome5';
 import Entypo from 'react-native-vector-icons/Entypo';
 import AntDesign from 'react-native-vector-icons/AntDesign';
 
+// Navigation prop reference
 const Home = ({navigation}) => {
   const [currentSelected, setCurrentSelected] = useState([0]);
 
@@ -36,7 +37,7 @@ const Home = ({navigation}) => {
             margin: 10,
             elevation: 5,
           }}>
-          <View style={{width: 60, height: 60}}>
+          <View style={{width: 90, height: 70}}>
             <Image
               source={item.image}
               style={{
@@ -65,7 +66,7 @@ const Home = ({navigation}) => {
               alignItems: 'center',
             }}>
             <FontAwesome
-              name="angle-right"
+              name="search-plus"
               style={{
                 fontSize: 12,
                 color: currentSelected == index ? COLOURS.black : COLOURS.white,
@@ -76,7 +77,7 @@ const Home = ({navigation}) => {
       </TouchableOpacity>
     );
   };
-
+  // Display Data from Navigation
   const renderItems = (data, index) => {
     return (
       <TouchableOpacity
@@ -157,7 +158,7 @@ const Home = ({navigation}) => {
               {data.title}
             </Text>
           </View>
-          <View style={{width: 150, height: 150, marginRight: -45}}>
+          <View style={{width: 150, height: 150, marginRight: -1}}>
             <Image
               source={data.image}
               style={{
@@ -185,7 +186,7 @@ const Home = ({navigation}) => {
                 alignItems: 'center',
               }}>
               <Entypo
-                name="plus"
+                name="open-book"
                 style={{fontSize: 18, color: COLOURS.black}}
               />
             </View>
@@ -292,8 +293,8 @@ const Home = ({navigation}) => {
               flexDirection: 'row',
               alignItems: 'center',
             }}>
-            <Ionicons
-              name="search"
+            <Entypo
+              name="keyboard"
               style={{fontSize: 20, color: COLOURS.black, opacity: 0.8}}
             />
             <TextInput
